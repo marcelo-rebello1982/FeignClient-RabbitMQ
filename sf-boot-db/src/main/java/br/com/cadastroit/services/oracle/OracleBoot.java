@@ -60,7 +60,7 @@ public class OracleBoot {
 		
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		if(SPRING_DATASOURCE_URL == null) {
-			if(System.getProperty("os.name").toLowerCase().contains("windows"))HOST_FILE="C:\\Workspaec\\sfconfig";
+			if(System.getProperty("os.name").toLowerCase().contains("windows"))HOST_FILE="C:\\Workspace\\sfconfig";
 			String nameFile = HOST_FILE + "jdbc.properties";
 			File f 			= new File(nameFile);
 			boolean crypt   = false;
