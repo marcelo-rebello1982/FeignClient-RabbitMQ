@@ -28,7 +28,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableJpaRepositories
 public class OracleBoot {
 
-	private String HOST_FILE = "/opt/csfconfig/";
+	private String HOST_FILE = "/opt/sfconfig/";
 	private static String FILE_SAVE_FOLDER = ""; 
 	private String SERVICE_PACKAGE = "";
 
@@ -60,7 +60,7 @@ public class OracleBoot {
 		
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		if(SPRING_DATASOURCE_URL == null) {
-			if(System.getProperty("os.name").toLowerCase().contains("windows"))HOST_FILE="C:\\ComplianceFiscal\\csfconfig";
+			if(System.getProperty("os.name").toLowerCase().contains("windows"))HOST_FILE="C:\\Workspaec\\sfconfig";
 			String nameFile = HOST_FILE + "jdbc.properties";
 			File f 			= new File(nameFile);
 			boolean crypt   = false;
